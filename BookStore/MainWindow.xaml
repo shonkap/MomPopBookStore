@@ -8,7 +8,7 @@
     <Grid>
 
 
-        <Rectangle HorizontalAlignment="Left" Height="271" Margin="-6,-2,0,0" Stroke="Black" VerticalAlignment="Top" Width="158" Fill="#FF26EAE5"/>
+        <Rectangle HorizontalAlignment="Left" Height="271" Margin="0,-2,0,0" Stroke="Black" VerticalAlignment="Top" Width="152" Fill="#FF26EAE5"/>
 
 
         <DataGrid x:Name="dataGrid" ItemsSource="{Binding Books}" Margin="163,49,57,31" AutoGenerateColumns="False" CanUserAddRows="True" CellEditEnding="dataGrid_CellEditEnding">
