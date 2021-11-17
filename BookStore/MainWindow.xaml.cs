@@ -111,6 +111,8 @@ namespace BookStore
                 price_dropdown.SelectedIndex = 0;
                 DataInfo.filtdata(5);
             }
+            if (DataInfo != null)
+                DataInfo.searchdatahelper();
         }
         private void price_dropdown_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -129,6 +131,9 @@ namespace BookStore
                 stock_dropdown.SelectedIndex = 0;
                 DataInfo.filtdata(7);
             }
+
+            if (DataInfo != null)
+                DataInfo.searchdatahelper();
         }
 
 

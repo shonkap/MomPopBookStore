@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h4VzDYuobU/NXdB/MOCS5OAFqtKPtN7VUIAr4jCXYB+vRNMGbR3dNKFgpqztCPD/t89w8gDNCmlQITTesTfakA==",
+  "dgSpecHash": "6RO3HHvSGeHDil95CQE7vLMh9G3B9gy8NjAiQiWrvspmA9MRclhVD35cD2kxRM+S8hzoZvBPOoZy8ik5ZTLWwg==",
   "success": true,
-  "projectFilePath": "D:\\Users\\Cortana\\source\\repos\\BookStore\\BookStore.csproj",
+  "projectFilePath": "D:\\CSProjects\\MomPopBookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cortana\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\Cortana\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\Cortana\\source\\repos\\BookStore\\BookStore.csproj": {}
+    "D:\\CSProjects\\MomPopBookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "D:\\Users\\Cortana\\source\\repos\\BookStore\\BookStore.csproj": {
+    "D:\\CSProjects\\MomPopBookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\Cortana\\source\\repos\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "D:\\CSProjects\\MomPopBookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "D:\\Users\\Cortana\\source\\repos\\BookStore\\BookStore.csproj",
+        "projectPath": "D:\\CSProjects\\MomPopBookStore\\BookStore\\BookStore.csproj",
         "packagesPath": "C:\\Users\\Cortana\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\Cortana\\source\\repos\\BookStore\\obj\\",
+        "outputPath": "D:\\CSProjects\\MomPopBookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

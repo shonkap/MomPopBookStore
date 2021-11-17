@@ -84,6 +84,10 @@ namespace BookStore.ViewModels
                     Books.Add(book);
                 }
             }
+            else
+            {
+                Books.Add(new Book(1, "Test1", "Tests", "10.1", "1", true));
+            }
 
             //Books.Add(new Book(1, "Test1", "Tests", "10.1", "1", true));
             //Books.Add(new Book(2, "Test2", "Tests", "15.1", "1", true));
@@ -137,8 +141,25 @@ namespace BookStore.ViewModels
 
             booklibrary();
         }
+
         public void addBook(Book Newbook)
         {
+            //clear the filters
+            searchdata();
+            filtdata();
+
+            if(Books[Books.Count - 1].Bname == "" || Books[Books.Count - 1].Gbook == "" || Books[Books.Count - 1].Pbook == "" || Books[Books.Count - 1].Stockbook == "")
+            {
+                var listvar1 = Books
+                .Where(item => item.Bname == "" || item.Gbook == "" || item.Pbook == "" || item.Stockbook == "")
+                .Select(item => item);
+
+                stuff.ItemsSource = listvar1.Cast<Book>().ToList();
+                //filtlist = Books.Cast<Book>().ToList();
+
+                return;
+            }
+
             Newbook.ID = curitemID+1;
             curitemID++;
 
@@ -149,6 +170,10 @@ namespace BookStore.ViewModels
             booklibrary();
         }
 
+        public void searchdatahelper()
+        {
+            searchdata(storedsearchval, storedsearchstr);
+        }
 
         //search data
         public void searchdata(int sortval = 0, string searchstr = "")
@@ -196,9 +221,6 @@ namespace BookStore.ViewModels
         //filter data
         public void filtdata(int sortval = 0)
         {
-
-
-
             storedsortval = sortval;
 
             if (sortval == 0) //show all
@@ -216,6 +238,7 @@ namespace BookStore.ViewModels
                 query = true;
 
                 var listvar2 = filtlist
+                .Where(item => item.Stockbook != "")
                 .OrderBy(item => float.Parse(item.Stockbook))
                 .Select(item => item);
 
@@ -227,6 +250,7 @@ namespace BookStore.ViewModels
                 query = true;
 
                 var listvar2 = filtlist
+                .Where(item => item.Stockbook != "")
                 .OrderByDescending(item => float.Parse(item.Stockbook))
                 .Select(item => item);
 
@@ -239,6 +263,7 @@ namespace BookStore.ViewModels
                 query = true;
 
                 var listvar2 = filtlist
+                .Where(item => item.Pbook != "")
                 .OrderBy(item => float.Parse(item.Pbook))
                 .Select(item => item);
 
@@ -250,6 +275,7 @@ namespace BookStore.ViewModels
                 query = true;
 
                 var listvar2 = filtlist
+                .Where(item => item.Pbook != "")
                 .OrderByDescending(item => float.Parse(item.Pbook))
                 .Select(item => item);
 

@@ -44,7 +44,7 @@
                 <DataGridTemplateColumn Header="Book Price">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Pbook}"/>
+                            <TextBlock Text="{Binding Pbook, StringFormat=$ {0:C}}"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                     <DataGridTemplateColumn.CellEditingTemplate>
